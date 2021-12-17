@@ -1,0 +1,5 @@
+RegisterNetEvent("NotifyRobbery")
+AddEventHandler("NotifyRobbery", function(storeName)
+    print("Robbery notification.")
+    TriggerClientEvent('chat:addMessage', -1, 'Theres a robbery taking place at the: ' ..storeName.. '! Check your map!', {255, 255, 255}) 
+end)
